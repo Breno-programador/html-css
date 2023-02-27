@@ -93,7 +93,9 @@ footer{
    a{width: 100%;}
    main{ flex-direction: column;  }
    #primeiraColuna{
+    width: 100%; 
    }
    #segundaColuna{
+    width: 100%; 
    }
 }
