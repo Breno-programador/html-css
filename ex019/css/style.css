@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+#faixa{
+    background-color: rgb(51, 236, 174);
+    text-align: center;
+    padding: 50px;
+}
+
+*{
+    margin:auto;
+}
+
+#botao-menu{
+    display: none;
+}
+label[for='botao-menu']{
+    cursor: pointer; /* cursor:pointer é para indicar um local onde podemos clicar,ou seja,a seta vira uma mãozinha */
+    background-color: black;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+} 
+#menu{
+    display:flex ;
+    width: auto;
+    height: auto;
+}
+
+header{
+    margin-left: 1%;
+}
+
+a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 247, 173);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    
+}
+a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 247, 173);
+}
+@media(max-width:0px){
+    #menu{
+        margin-left: -200%;
+        flex-direction: column;
+    }
+    label[for='botao-menu']{
+        display: block;
+    }
+    #botao-menu:checked ~ #menu{
+        margin-left: 0px;
+    }
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+}
+
+#cor-text{
+    color: white;
+}
+
+.divimg{
+    background-color: rgb(171, 174, 179);
+}
+.divimg1{
+    background-color: rgb(171, 174, 179);
+}
+.divimg2{
+    background-color: rgb(171, 174, 179);
+}
+.divimg3{
+    background-color: rgb(171, 174, 179);
+}
+
+#div1{
+    width: 30%;
+}
+
+#div2{
+    width: 70%;
+}

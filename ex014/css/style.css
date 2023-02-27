@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face{
+    font-family: Milenia;
+    src: url( ../font/Milenia.ttf ) ;
+}
+
+h1{
+    font-family: Milenia;
+    text-align: center;
+    border : 10px solid rgb(0, 179, 250);
+    padding: 20px ;
+    outline: 3px solid salmon;
+    margin-left: 25%;
+    margin-right: 15%;
+}   /*  padding é usado para definir o espaço das bordas entre ela e o conteúdo(texto)  */
+
+a{
+    border: 1px solid green;
+    border-radius:  10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 162, 255);
+    text-decoration: none;
+    padding: 10px ;
+    text-transform: uppercase;
+    font-family: fantasy;
+    box-shadow: 4px 4px 4px 4px rgb(71, 227, 255);    
+    margin: 8px;
+}
+a:hover{ /* Quando coloco a seta do mouse em cima muda de cor o link*/
+    background-color: aliceblue;
+    color: aqua;
+}
+#menuNav{
+    text-align: center;
+    border: 13px solid black;
+    width: 80%;
+    margin: auto;
+    outline: 5px solid red;
+}
+
+div{
+    text-align: center;
+}
+
+p > span{
+    display: none;
+}
+p:hover > span{
+    display: inline-block;
+    background-color: teal;
+    border: 3px solid rgb(255, 251, 0);
+}

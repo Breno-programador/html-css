@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="flex-conteiner"> <!-- flex-container é simplesmente uma caixa onde podemos inserir caixas menores -->
+        <div style="order: 9">1</div> <!-- style=order  é usado para defirnirmos a ordem de um texto dentro da div -->
+        <div style="order: 5;">2</div>
+        <div style="order: 3;flex-grow: 1;">3</div> <!-- flex gow serve para identificar que uma caixa é mais larga que as outras -->
+        <div style="order: 7;">4</div> <!-- flex-shrink é o contrario do flex-grow,ou seja,identifica que uma caixa é menor que as outras -->
+        <div style="order: 4;">5</div> 
+        <div style="order: 2;">6</div>
+        <div style="order: 8;">7</div>
+        <div style="order: 1;">8</div>
+        <div style="order: 6;">9</div>
+        <div style="order: 10;">10</div>
+        <div style="order: 13;">11</div>
+        <div style="order: 11;">12</div>
+        <div style="order: 12;">13</div>
+    </div>
+</body>
+</html>

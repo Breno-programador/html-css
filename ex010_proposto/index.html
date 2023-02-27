@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro da liga dos astronautas</h1>
+    <fieldset>
+        <p>
+            <label for="pnome">Nome</label>
+            <input type="text" id="pnome" name="pname" required> <!--required é usado para que um campo seja preenchido obrigatoriamente-->
+        </p>
+        <p><label for="e-mail">E-mail</label>
+            <input type="text" id="e-mail" name="e-mail">
+            <label for="psw">-Password</label>
+            <input type="password" name="psw" id="psw">
+        </p>
+        <p>
+            <label for="birthday">Qual sua data de nascimento</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <label for="photograph">-Foto</label>
+                    <input type="file" id="photograph" name="photograph">
+        </p>
+        <p>
+            <label for="nationality">Nacionalidade</label>
+            <select name="nationality" id="nationality">
+                  <option valute="Russa">Russa</option>
+                  <option value="Americano">Americano</option>
+                  <option value="Brasileiro">Brasileiro</option>
+            </select>
+        <label for="sexo">-Gênero</label>
+        <input type="radio"id="masculino" name="sexo" value="Masculino">
+        <label for="masculino">M</label>
+        <input type="radio"id="feminino" name="sexo" value="Feminino" >
+        <label for="feminino">F</label>
+        </p>
+        <p>
+            <label for="text">Principais qualidades:</label>
+            <input type="checkbox" id="inteligência" name="inteligência" value="inteligência">
+            <label for="inteligencia">Inteligência</label>
+            <input type="checkbox" name="resiliencia" id="resiliencia" value="resiliencia">
+            <label for="resiliencia">Resiliência</label>
+            <input type="checkbox" name="preparo fisico" id="preparo fisico" value="preparo fisico">
+            <label for="preparo fisico">Preparo Físico</label>
+            <input type="checkbox" name="educacao" id="educacao" value="educacao">
+            <label for="educacao">Educação</label>
+        </p>
+        <p>
+            <label for="mensagem"></label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        </p>
+        <input type="submit" value="Criar">
+    </fieldset>     
+</body>
+</html>

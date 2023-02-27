@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulários em HTML</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="pnome">Nome</label>
+            <input type="text" id="pnome" name="pname" required> <!--required é usado para que um campo seja preenchido obrigatoriamente-->
+            <br>
+            <label for="snome">Sobrenome</label>
+            <input type="text" id="snome" name="snome">
+            <br> 
+
+            <label for="psw">Senha</label>
+            <input type="password" name="psw" id="psw">
+            <input type="reset" value="Redefinir">
+            <br>
+            <label for="sexo">Sexo</label>
+            <br>
+            <input type="radio"id="masculino" name="sexo" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio"id="feminino" name="sexo" value="Feminino" >
+            <label for="feminino">Feminino</label>
+            <br>
+            <label for="def">Possui alguma deficiência</label>
+            <br>
+            <input type="checkbox" id="vision" name="vision" value="Visão">
+            <label for="visao">Visão</label>
+            <hr>
+            <input type="checkbox" id="aud" name="aud" value="Auditiva">
+            <label for="auditiva">Auditiva</label>
+            <hr>
+            <input type="checkbox" id="fala" name="fala" value="Fala">
+            <label for="fala">Fala</label>
+            <hr>
+           
+            <p>
+                <label for="birthday">Qual sua data de nascimento</label>
+                <input type="date" id="birthday" name="birthday">
+            </p>
+
+            <p>
+                <label for="fPerfil">Foto de Perfil</label>
+                <input type="file" id="fPerfil" name="fPerfil">
+            </p>
+
+            <p>
+                <label for="mensagem">Dúvidas</label>
+                <br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <label for="raca">Raça</label>
+                <select name="raca" id="raca">
+                    <option value="Pardo">Pardo</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Indígena">Indígena</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+
+            <p>
+                <label for="color">Cor</label>
+                <input type="color" name="color" id="color">
+            </p>
+
+            <br>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Redefinir">
+            </p>
+
+        </fieldset>
+    </form>
+</body>
+</html>

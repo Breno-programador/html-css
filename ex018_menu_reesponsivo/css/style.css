@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+#botao-menu{
+    display: none;
+}
+label[for='botao-menu']{
+    cursor: pointer; /* cursor:pointer é para indicar um local onde podemos clicar,ou seja,a seta vira uma mãozinha */
+    background-color: black;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display: none;
+} 
+#menu{
+    display:flex ;
+    margin-top: 10px;
+}
+a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-top: 3px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(46, 182, 223);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-top: 5px;
+}
+a:hover{
+    background-color: rgb(76, 0, 255);
+    color: rgb(255, 255, 255);
+    outline: 5px solid rgb(0, 204, 255);
+}
+@media(max-width:535px){
+    #menu{
+        transition: all .4%;
+        margin-left: -200%;
+        flex-direction: column;
+    }
+    label[for='botao-menu']{
+        display: block;
+    }
+    #botao-menu:checked ~ #menu{
+        margin-left: 0px;
+    }
+}

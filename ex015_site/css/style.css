@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #4A4E8C;
+    --cor2: #54578C;
+    --cor3: #787CBF;
+    --cor4: #A0A3D9;
+    --cor5: #ADB0D9;
+}
+@font-face{
+    font-family: Zoop;
+    src: url(../fonte/Wedding\ Vintage.otf);
+    font-family: kg;
+    src: url(../fonte/KGHAPPY.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#faixaHeader{
+    box-shadow: 2px 5px 7px  var(--cor1) ;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+}
+#caixaLogo{
+    display: flex;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    max-width: 1150px;
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    padding: 10px 10px;
+    position: fixed;
+}
+header img{
+    margin-right: 10px;
+}
+header p{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+} /* align-items serve para centralizar o conteúdo na vertical,mas para que funcione é preciso abrirmos a tag display : flex */
+#botao-menu{
+    display: none;
+}
+label[for='botao-menu']{
+    display: none;
+    cursor:pointer;
+    background-color: rgb(76, 0, 255);
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    display: none;
+    position: absolute;
+    right: 0px;
+}
+#menu{
+    display: flex;
+    margin-top: 10px;
+   
+}
+a{
+    display: inline-block;
+    /* width: 100px; */
+    height:30px;
+    margin-top: 3px;
+    /* background-color: rgb(0, 0, 0); */
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: yellow;
+    line-height: 30px;
+}
+a:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: 3px solid #1900ff;
+}
+
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+header > nav > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #333dc9;
+}
+main h1{
+    color: #ff7300;
+}
+header > nav > a:hover{
+    color: rgb(0, 183, 255);
+}
+main{
+    width: 1150px;
+    width: 80%;
+    margin: auto;
+}
+li{
+    margin-bottom: 16px;
+}
+p{
+    text-align: justify;
+}
+
+#imagemTop{
+    margin: 0;
+    width: 100%;
+    height: 350px;
+    background-image: url("../imagens/pexels-photo-97077.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+h1{
+    font-size:  30px;
+}
+h2{
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    max-width: 1150px;
+    width: 80%;
+    background-color: var(--cor1);
+    height: 150px;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+footer div{
+    display: flex;
+    width: 32%;
+    height: 100%;
+    border: 1px solid #fffff9; 
+    align-items: center;
+}
+
+#divCentro{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#divEsquerda{
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+#divDireita{
+    color: rgb(255, 255, 255);
+    font-family: Zoop;
+}
+
+@media(max-width:1155px){
+    #menu{
+        transition: all .4s;
+        margin-top: -100%;
+        flex-direction: column;
+    }
+    label[for='botao-menu']{
+        display: block;
+    }
+    #botao-menu:checked ~ #menu{
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        width: 100%;
+        background-color: #ADB0D9;
+    }
+}
