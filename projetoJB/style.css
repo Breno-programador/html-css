@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#faixaHeader{
+    box-shadow: 2px 5px 7px greenyellow ;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 6, 6);
+    position: fixed;
+}
+#caixaLogo{
+    display: flex;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 128, 240);
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    position: fixed;
+}
+header img{
+    margin-right: 10px;
+}
+
+a:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: 3px solid #1900ff;
+}
+
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+header > nav > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #333dc9;
+}
+
+main h1{
+    color: #ff7300;
+}
+header > nav > a:hover{
+    color: rgb(0, 183, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1155px){
+    #menu{
+        transition: all .4s;
+        margin-top: -100%;
+        flex-direction: column;
+    }
+    label[for='botao-menu']{
+        display: block;
+    }
+    #botao-menu:checked ~ #menu{
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        width: 100%;
+        background-color: #ADB0D9;
+    }
+}
+
+
+
+
+/* body{
+    background-image: url(imagens/imagemdefundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1918px 900px;
+} */
+
+
+
+
