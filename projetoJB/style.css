@@ -13,7 +13,7 @@
 
 html {
     padding: 3rem;
-    background-color: #ffee00;
+    background-color: #ffffff;
     color: #EFEFEF;
 }
 
@@ -53,11 +53,11 @@ html {
 .elemento__1,
 .elemento__5 {
     width: 200px;
-    height: 150px;
+    height: 110px;
     transform-style: preserve-3d;
     border-radius: 10px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 20px 5px rgba(100, 100, 255, .4);
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 200, 0.589);
     opacity: 0;
     transition: all .3s ease;
     transition-delay: 1s;
@@ -65,7 +65,7 @@ html {
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #f3f5f724;
+    background-color: hsla(0, 0%, 100%, 0);
     cursor: pointer;
     background-blend-mode: color-burn;
 
@@ -77,7 +77,7 @@ html {
 .elemento__1:hover,
 .elemento__5:hover {
     box-shadow: 0 0 30px 10px rgba(255, 0, 170, 0.973);
-    background-color: rgba(0, 0, 255, 0.63);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .titulo__elemento {
@@ -85,11 +85,11 @@ html {
     opacity: 0;
     transition: all .3s ease;
     bottom: 0;
-    left: 5px;
+    left: 15px;
     position: absolute;
     will-change: transform;
-    color: #ff0000;
-    text-shadow: 0 0 5px rgba(100, 100, 255, .6)
+    color: #00e1ff;
+    text-decoration: underline;
 }
 
 .elemento__fotos {
@@ -97,12 +97,14 @@ html {
 }
 
 .elemento__1 {
-    transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
-    background-image: url('imagens/favicon_io/android-chrome-512x512.png');
+    transform: translateX(-100px) translateZ(-50px) rotateY(-10deg);
+    background-image: url('imagens/NASA.gif');
+    background-size: cover;
+    background-position: center center;
 }
 
 .elemento__2 {
-    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    transform: translateX(-50px) translateZ(-25px) rotateY(-5deg);
     background-image: url('imagens/ic-css.svg');
 }
 
@@ -135,7 +137,6 @@ html {
     border-radius: 10px;
     text-shadow: 0 0 10px rgba(255, 255, 255, .8);
     text-align: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
