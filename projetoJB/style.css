@@ -1,13 +1,10 @@
 @charset "UTF-8";
 
-@keyframes degrade-animado {
-    0%{background-position-x: 0%;}
-    100%{background-position-x: 100%;}
-}
-
 :root{
     --cores-dancantes: rgb(0, 255, 179),rgb(0, 247, 255),rgb(0, 119, 255),rgb(132, 0, 255);
 }
+{}
+body{}
 
 * {
     font-family: "Verdana", sans-serif;
@@ -20,12 +17,6 @@
     margin: 0;
 }
 
-html {
-    padding: 3rem;
-    background-color: #ffffff;
-    color: #EFEFEF;
-}
-
 .conteudo__geral {
     display: flex;
     perspective: 10px;
@@ -35,6 +26,7 @@ html {
     transition: all 1.3s ease-out;
     justify-content: center;
     transform-style: preserve-3d;
+    padding: 3rem;
 }
 
 .conteudo__geral:hover {
@@ -156,6 +148,11 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes degrade-animado {
+    0%{background-position-x: 0%;}
+    100%{background-position-x: 100%;}
 }
 
 h1{
