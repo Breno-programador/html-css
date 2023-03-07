@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+@keyframes degrade-animado {
+    0%{background-position-x: 0%;}
+    100%{background-position-x: 100%;}
+}
+
+:root{
+    --cores-dancantes: rgb(0, 255, 179),rgb(0, 247, 255),rgb(0, 119, 255),rgb(132, 0, 255);
+}
+
 * {
     font-family: "Verdana", sans-serif;
     -moz-box-sizing: border-box;
@@ -98,46 +107,61 @@ html {
 
 .elemento__1 {
     transform: translateX(-100px) translateZ(-50px) rotateY(-10deg);
-    background-image: url('imagens/NASA.gif');
+    background-image: url('imagens/elementos/NASA.gif');
     background-size: cover;
     background-position: center center;
 }
 
 .elemento__2 {
     transform: translateX(-50px) translateZ(-25px) rotateY(-5deg);
-    background-image: url('imagens/ic-css.svg');
+    background-image: url('imagens/elementos/SpaceX.gif');
+    background-size: cover;
+    background-position: center center;
 }
 
 .elemento__3 {
     opacity: 1;
-    background-image: url('imagens/ic-logo.png');
-    background-size: 100px;
-    background-position-y: 25px;
+    background-image: url('imagens/elementos/CNES.gif');
+    background-size: cover;
+    background-position: center center;
 }
 
 .elemento__4 {
     transform: translateX(30px) translateZ(-25px) rotateY(5deg);
-    background-image: url('imagens/ic-js.svg');
+    background-image: url('imagens/elementos/JAXA.gif');
+    background-size: cover;
+    background-position: center center;
 }
 
 .elemento__5 {
     transform: translateX(60px) translateZ(-50px) rotateY(10deg);
-    background-image: url('imagens/ic-git.svg');
+    background-image: url('imagens/elementos/ESA.gif');
+    background-size: cover;
+    background-position: center center;
 }
 
 .titulo__inicial {
     font-weight: 300;
     font-size: 2rem;
-    color: #fff;
+    color: #ffffff;
     transition: all .6s ease;
     width: 100%;
     height: 100%;
-    background-color: #303050;
-    background-image: radial-gradient(circle at center top, #cce, #33a);
+    background-image: linear-gradient(to right, var(--cores-dancantes) );
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
     border-radius: 10px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    text-shadow: 0 0 12px rgb(251, 255, 0);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1{
+    color: black;
+}
+
+p{
+    color: black;
 }
