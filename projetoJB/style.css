@@ -23,6 +23,8 @@ body{
 }
 
 .conteudo__geral {
+    width: 200px;
+    margin: auto;
     display: flex;
     perspective: 10px;
     transform: perspective(300px) rotateX(20deg);
@@ -36,6 +38,7 @@ body{
 
 .conteudo__geral:hover {
     perspective: 1000px;
+    width: 1000px;
     transition: all 1.3s ease-in;
     transform: perspective(10000px) rotateX(0deg);
 }
