@@ -4,7 +4,12 @@
     --cores-dancantes: rgb(0, 255, 179),rgb(0, 247, 255),rgb(0, 119, 255),rgb(132, 0, 255);
 }
 
-body{}
+body{
+    background-image: url(imagens/imagemdefundo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
 * {
     font-family: "Verdana", sans-serif;
@@ -155,10 +160,18 @@ body{}
     100%{background-position-x: 100%;}
 }
 
+#linkcor{
+    color:#eeff00;
+    text-transform: uppercase;
+}
+
 h1{
-    color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3rem;
 }
 
 p{
-    color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
