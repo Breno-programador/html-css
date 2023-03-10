@@ -4,11 +4,16 @@
     --cores-dancantes: rgb(0, 255, 179),rgb(0, 247, 255),rgb(0, 119, 255),rgb(132, 0, 255);
 }
 
-body{
-    background-image: url(imagens/imagemdefundo.gif);
-    background-repeat: no-repeat;
+.bgcolor{
+    background-color: #0077ff;
+}
+
+main{
+    background-image: url(imagens/imagemdefundo.gif);  
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
+    height: 1000px;
 }
 
 * {
