@@ -3,11 +3,15 @@
 :root{
     --cores-dancantes: rgb(0, 255, 179),rgb(0, 247, 255),rgb(0, 119, 255),rgb(132, 0, 255);
 }
-
+*{
+    box-sizing: border-box;
+}
 .bgcolor{
     background-color: #0077ff;
 }
-
+#main-nasa{
+    padding: 0 500px;
+}
 main{
     background-image: url(imagens/imagemdefundo.gif);  
     background-size: cover;
@@ -15,6 +19,34 @@ main{
     background-position: center center;
     height: 1000px;
 }
+
+.h1pagprincipal{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3rem;
+}
+#linkcor{
+    color:#eeff00;
+    text-transform: uppercase;
+}
+.ppagprincipal{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 18px;
+}
+
+.pagnasa{
+    background-color: #54a4ff;
+    /* text-align: center; */
+    list-style-position: inside;
+    justify-content: center;
+}
+.h4nasa{
+    font-size: 18px;
+    color: #e0dd00;
+
+}
+
 
 * {
     font-family: "Verdana", sans-serif;
@@ -168,18 +200,6 @@ main{
     100%{background-position-x: 100%;}
 }
 
-#linkcor{
-    color:#eeff00;
-    text-transform: uppercase;
-}
 
-h1{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 3rem;
-}
 
-p{
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
+
