@@ -36,7 +36,7 @@ main{
 }
 
 .pagnasa{
-    background-color: #54a4ff;
+    background-color: #268BFF;
     /* text-align: center; */
     list-style-position: inside;
     justify-content: center;
@@ -200,6 +200,35 @@ main{
     100%{background-position-x: 100%;}
 }
 
+footer{
+    display: flex;
+    max-width: 1150px;
+    width: 100%;
+    background-color: var(--cor1);
+    height: 150px;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+footer div{
+    display: flex;
+    width: 33%;
+    height: 100%;
+    border: 2px solid #fffff9; 
+    align-items: center;
+}
+#divesq{
+    background-color: #003C61;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#divcentral{
+    background-color: #003C61;
+}
+#divdir{
+    background-color: #00e1ff;
+}
 
 
 
