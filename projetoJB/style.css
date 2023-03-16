@@ -4,6 +4,34 @@
     --cores-dancantes: rgb(0, 255, 179),rgb(0, 247, 255),rgb(0, 119, 255),rgb(132, 0, 255);
 }
 *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: 
+    border-box;
+    box-sizing: border-box;
+    -webkit-appearancer: none;
+    appearance: none;
+    
+}
+body,html{
+    background-color: #5B00ED;
+    text-align: center;
+    color: white;    
+}
+#headerspacex{
+    background-color: white;
+    margin: 10px;
+    border-width: 10px;
+    border-style: double;
+    border-color: #00ff88 #00e1ff;   
+}
+#divheaderspacex{
+    text-align: center;
+    color: #ff0000;
+    padding: 10px;
+}
+
+*{
     box-sizing: border-box;
 }
 .bgcolor{
@@ -46,7 +74,6 @@ main{
     color: #e0dd00;
 
 }
-
 
 * {
     font-family: "Verdana", sans-serif;
