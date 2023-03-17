@@ -22,10 +22,10 @@ Funções
 */
 
 
-/* var area = document.getElementById('area')
+var area = document.getElementById('area')
 console.log(area)
 var titulo = document.getElementsByTagName(titulo)
-console.log(titulo) */
+console.log(titulo) 
 
 var area = document.getElementById('area')
 function clicar (){
@@ -42,12 +42,3 @@ function entrar (){
 function sair (){
     area.innerHTML = 'Saiu!'
 }
-
-/* .valuer */
-
-
-var numero1 = Number.parseInt(window.prompt(`digite um número`)).valuer
-function somar (){
-    
-}
-var numero2 = Number.parseFloat(window.prompt(`digite outro número`)).valuer 

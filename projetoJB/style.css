@@ -13,10 +13,11 @@
     appearance: none;
     
 }
-body,html{
+#bodyspacex{
     background-color: #5B00ED;
     text-align: center;
     color: white;    
+    padding: 0 500px;
 }
 #headerspacex{
     background-color: white;
@@ -30,7 +31,6 @@ body,html{
     color: #ff0000;
     padding: 10px;
 }
-
 *{
     box-sizing: border-box;
 }
