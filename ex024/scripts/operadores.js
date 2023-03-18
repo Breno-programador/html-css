@@ -17,7 +17,6 @@ document.write(`O valor de a é: ${f}<br>`)
 //Operador Ternário
 // ? ,  : 
 var média = 5.5
-var resultado = média >= 7 ? 'Aprovado':
-'Reprovado'
+var resultado = média >= 7 ? `Aprovado`: 'Reprovado'
 document.write(`O aluno foi <strong>${resultado}.
 </strong>`)
